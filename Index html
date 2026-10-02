@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CryptoAds Global | Worldwide Crypto Advertising</title>
+
+<meta name="description"
+content="CryptoAds Global - advertise your crypto, blockchain, Web3 and fintech projects worldwide.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#07111f;
+    color:#fff;
+    line-height:1.6;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 6%;
+    background:rgba(7,17,31,.96);
+    border-bottom:1px solid #18304b;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+    color:#35e0a1;
+}
+
+.logo span{
+    color:#fff;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:#dbe8f5;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#35e0a1;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:70px 6%;
+    background:
+    radial-gradient(circle at top right,#123f5c,transparent 40%),
+    radial-gradient(circle at bottom left,#163b35,transparent 35%);
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.badge{
+    display:inline-block;
+    background:#102d3b;
+    color:#35e0a1;
+    border:1px solid #1c7259;
+    padding:8px 15px;
+    border-radius:30px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1.05;
+    margin-bottom:25px;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#35e0a1,#38a8ff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#aebed0;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.primary{
+    background:#35e0a1;
+    color:#06121d;
+}
+
+.primary:hover{
+    background:#54f1b6;
+}
+
+.secondary{
+    background:#102136;
+    color:white;
+    border:1px solid #27445e;
+}
+
+section{
+    padding:80px 6%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#9eb0c3;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-top:-45px;
+    position:relative;
+}
+
+.stat{
+    background:#0c1b2c;
+    border:1px solid #19344e;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat h3{
+    color:#35e0a1;
+    font-size:30px;
+}
+
+.stat p{
+    color:#9eb0c3;
+}
+
+.packages{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.card{
+    background:#0c1b2c;
+    border:1px solid #1b3852;
+    border-radius:18px;
+    padding:30px;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+    border-color:#35e0a1;
+}
+
+.popular{
+    border:2px solid #35e0a1;
+}
+
+.popular-label{
+    position:absolute;
+    top:-14px;
+    right:20px;
+    background:#35e0a1;
+    color:#06121d;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.price{
+    font-size:35px;
+    color:#35e0a1;
+    margin:15px 0;
+}
+
+.card ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.card li{
+    padding:8px 0;
+    color:#b6c6d7;
+}
+
+.card li::before{
+    content:"✓ ";
+    color:#35e0a1;
+    font-weight:bold;
+}
+
+.form-container{
+    max-width:800px;
+    margin:auto;
+    background:#0c1b2c;
+    border:1px solid #1b3852;
+    border-radius:20px;
+    padding:35px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    color:#c9d7e4;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:14px;
+    border-radius:9px;
+    border:1px solid #29445c;
+    background:#071522;
+    color:white;
+    outline:none;
+}
+
+input:focus,select:focus,textarea:focus{
+    border-color:#35e0a1;
+}
+
+textarea{
+    min-height:130px;
+    resize:vertical;
+}
+
+.payment-box{
+    margin-top:25px;
+    padding:20px;
+    background:#081827;
+    border:1px dashed #35e0a1;
+    border-radius:12px;
+}
+
+.payment-box strong{
+    color:#35e0a1;
+}
+
+.notice{
+    font-size:13px;
+    color:#93a7ba;
+    margin-top:12px;
+}
+
+.ads{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.ad{
+    background:#0c1b2c;
+    border:1px solid #19344e;
+    border-radius:15px;
+    padding:22px;
+}
+
+.ad small{
+    color:#35e0a1;
+}
+
+.ad h3{
+    margin:10px 0;
+}
+
+.ad p{
+    color:#9eb0c3;
+}
+
+footer{
+    text-align:center;
+    padding:40px 6%;
+    background:#050d17;
+    border-top:1px solid #18304b;
+    color:#8195a8;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    background:rgba(0,0,0,.75);
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal-content{
+    background:#0c1b2c;
+    border:1px solid #35e0a1;
+    border-radius:18px;
+    padding:35px;
+    max-width:500px;
+    width:100%;
+    text-align:center;
+}
+
+.close{
+    float:right;
+    cursor:pointer;
+    font-size:25px;
+}
+
+.success{
+    color:#35e0a1;
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+@media(max-width:800px){
+
+    nav ul{
+        display:none;
+        position:absolute;
+        top:65px;
+        left:0;
+        right:0;
+        background:#07111f;
+        flex-direction:column;
+        padding:20px 6%;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .stats,
+    .packages,
+    .ads{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    .form-container{
+        padding:22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">₿ Crypto<span>Ads</span> Global</div>
+
+    <div class="menu" onclick="toggleMenu()">☰</div>
+
+    <ul id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#advertise">Advertise</a></li>
+        <li><a href="#ads">Live Ads</a></li>
+    </ul>
+</nav>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">🌍 GLOBAL CRYPTO ADVERTISING PLATFORM</div>
+
+<h1>
+Put Your Crypto Project
+<span class="gradient">In Front of the World</span>
+</h1>
+
+<p>
+Promote crypto, blockchain, Web3, fintech and digital businesses
+to a worldwide audience. Choose an advertising package,
+submit your campaign and pay before publication.
+</p>
+
+<div class="buttons">
+
+<a href="#packages" class="btn primary">
+View Advertising Packages
+</a>
+
+<a href="#advertise" class="btn secondary">
+Advertise Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="stats">
+
+<div class="stat">
+<h3>150+</h3>
+<p>Countries Targeted</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Campaign Access</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Online Platform</p>
+</div>
+
+<div class="stat">
+<h3>Fast</h3>
+<p>Ad Review</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="packages">
+
+<div class="section-title">
+
+<h2>Advertising Packages</h2>
+
+<p>
+Choose a package that fits your campaign.
+</p>
+
+</div>
+
+
+<div class="packages">
+
+
+<div class="card">
+
+<h3>Starter</h3>
+
+<div class="price">$25</div>
+
+<ul>
+<li>7-day advertisement</li>
+<li>Worldwide exposure</li>
+<li>Basic ad placement</li>
+<li>Campaign submission</li>
+</ul>
+
+<button class="btn primary"
+onclick="choosePackage('Starter',25)">
+Choose Starter
+</button>
+
+</div>
+
+
+<div class="card popular">
+
+<div class="popular-label">
+POPULAR
+</div>
+
+<h3>Professional</h3>
+
+<div class="price">$75</div>
+
+<ul>
+<li>30-day advertisement</li>
+<li>Premium placement</li>
+<li>Worldwide targeting</li>
+<li>Priority review</li>
+</ul>
+
+<button class="btn primary"
+onclick="choosePackage('Professional',75)">
+Choose Professional
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>Enterprise</h3>
+
+<div class="price">$200</div>
+
+<ul>
+<li>90-day advertisement</li>
+<li>Featured placement</li>
+<li>Global campaign</li>
+<li>Priority support</li>
+</ul>
+
+<button class="btn primary"
+onclick="choosePackage('Enterprise',200)">
+Choose Enterprise
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section id="advertise">
+
+<div class="section-title">
+
+<h2>Submit Your Advertisement</h2>
+
+<p>
+Complete the form. Payment is required before campaign publication.
+</p>
+
+</div>
+
+
+<div class="form-container">
+
+<form id="adForm">
+
+<div class="form-group">
+
+<label>Business / Project Name</label>
+
+<input
+type="text"
+id="business"
+placeholder="Example: CryptoWorld"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Your Email</label>
+
+<input
+type="email"
+id="email"
+placeholder="you@example.com"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Website / Campaign URL</label>
+
+<input
+type="url"
+id="website"
+placeholder="https://example.com"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Advertising Package</label>
+
+<select id="package" required>
+
+<option value="">
+Select package
+</option>
+
+<option value="Starter|25">
+Starter - $50
+</option>
+
+<option value="Professional|75">
+Professional - $50
+</option>
+
+<option value="Enterprise|200">
+Enterprise - $200
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Advertisement Description</label>
+
+<textarea
+id="description"
+placeholder="Describe your project or advertisement..."
+required></textarea>
+
+</div>
+
+
+<div class="payment-box">
+
+<strong>💰 PAY BEFORE ADVERTISING</strong>
+
+<p>
+Your advertisement will remain pending until payment
+has been successfully confirmed.
+</p>
+
+<br>
+
+<button
+type="submit"
+class="btn primary"
+style="width:100%">
+Proceed to Payment
+</button>
+
+<p class="notice">
+Demo checkout is enabled in this version.
+For real payments, connect a secure payment provider
+and backend before going live.
+</p>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+
+<section id="ads">
+
+<div class="section-title">
+
+<h2>Featured Advertisements</h2>
+
+<p>
+Example campaigns displayed on the platform.
+</p>
+
+</div>
+
+
+<div class="ads">
+
+<div class="ad">
+
+<small>CRYPTO</small>
+
+<h3>NextGen Wallet</h3>
+
+<p>
+Secure digital asset wallet for managing crypto assets.
+</p>
+
+<br>
+
+<a href="#" class="btn secondary">
+Visit Project
+</a>
+
+</div>
+
+
+<div class="ad">
+
+<small>WEB3</small>
+
+<h3>Web3 Builders</h3>
+
+<p>
+Build, launch and grow your next decentralized project.
+</p>
+
+<br>
+
+<a href="#" class="btn secondary">
+Visit Project
+</a>
+
+</div>
+
+
+<div class="ad">
+
+<small>BLOCKCHAIN</small>
+
+<h3>Blockchain Hub</h3>
+
+<p>
+Discover blockchain technology and digital innovation.
+</p>
+
+<br>
+
+<a href="#" class="btn secondary">
+Visit Project
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<h3>₿ CryptoAds Global</h3>
+
+<p>
+Worldwide crypto & blockchain advertising.
+</p>
+
+<p>
+© 2026 CryptoAds Global. All rights reserved.
+</p>
+
+</footer>
+
+
+<div class="modal" id="paymentModal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">×</span>
+
+<div class="success">✓</div>
+
+<h2>Campaign Ready</h2>
+
+<p id="paymentText"></p>
+
+<br>
+
+<button class="btn primary"
+onclick="simulatePayment()">
+Continue to Secure Payment
+</button>
+
+<p class="notice">
+This is a demonstration checkout.
+Connect a real payment gateway before accepting money.
+</p>
+
+</div>
+
+</div>
+
+
+<script>
+
+let selectedPackage = "";
+let selectedPrice = 0;
+
+
+function toggleMenu(){
+
+    document
+    .getElementById("navMenu")
+    .classList.toggle("active");
+
+}
+
+
+function choosePackage(name,price){
+
+    selectedPackage = name;
+    selectedPrice = price;
+
+    document.getElementById("package").value =
+    name + "|" + price;
+
+    document.getElementById("advertise")
+    .scrollIntoView();
+
+}
+
+
+document
+.getElementById("adForm")
+.addEventListener("submit",function(event){
+
+    event.preventDefault();
+
+    const business =
+    document.getElementById("business").value;
+
+    const packageValue =
+    document.getElementById("package").value;
+
+    if(!packageValue){
+
+        alert("Please select an advertising package.");
+
+        return;
+    }
+
+    const parts = packageValue.split("|");
+
+    selectedPackage = parts[0];
+    selectedPrice = parts[1];
+
+    document.getElementById("paymentText").innerHTML =
+    "Your <strong>" +
+    selectedPackage +
+    "</strong> campaign for <strong>" +
+    business +
+    "</strong> is ready. Amount to pay: <strong>$" +
+    selectedPrice +
+    "</strong>.";
+
+    document.getElementById("paymentModal")
+    .style.display="flex";
+
+});
+
+
+function closeModal(){
+
+    document.getElementById("paymentModal")
+    .style.display="none";
+
+}
+
+
+function simulatePayment(){
+
+    alert(
+    "Demo payment successful! Your campaign is now marked as PENDING REVIEW. Connect a real payment gateway and backend to process actual payments."
+    );
+
+    closeModal();
+
+}
+
+
+window.onclick = function(event){
+
+    const modal =
+    document.getElementById("paymentModal");
+
+    if(event.target === modal){
+
+        closeModal();
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
