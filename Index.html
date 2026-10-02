@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Biz Global Ads</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b1728;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #26364d;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #35d07f;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #07111f, #102a46);
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #35d07f;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #c5d0dc;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 6px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #35d07f;
+      color: #06100a;
+    }
+
+    .secondary {
+      border: 1px solid #35d07f;
+      color: #35d07f;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .title h2 {
+      font-size: 30px;
+    }
+
+    .title p {
+      color: #aab8c8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #0d1b2d;
+      border: 1px solid #26364d;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #35d07f;
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .card ul {
+      list-style: none;
+      color: #c5d0dc;
+    }
+
+    .card li {
+      margin: 8px 0;
+    }
+
+    .payment {
+      background: #0d1b2d;
+      text-align: center;
+      border-radius: 15px;
+      padding: 40px 20px;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #050c16;
+      color: #8997a8;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">BIZ GLOBAL ADS</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#packages">Packages</a>
+      <a href="#payment">Payment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+
+    <h1>Advertise Your Business <span>Worldwide</span></h1>
+
+    <p>
+      Promote your business, crypto project, website or service
+      to a global audience with Biz Global Ads.
+    </p>
+
+    <div class="buttons">
+      <a href="#packages" class="btn primary">
+        Advertise Now
+      </a>
+
+      <a href="#contact" class="btn secondary">
+        Contact Us
+      </a>
+    </div>
+
+  </section>
+
+  <section id="packages">
+
+    <div class="title">
+      <h2>Advertising Packages</h2>
+      <p>Choose a package for your campaign.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Starter</h3>
+
+        <div class="price">₦30,000</div>
+
+        <ul>
+          <li>✓ Business advertisement</li>
+          <li>✓ Website promotion</li>
+          <li>✓ Basic exposure</li>
+        </ul>
+
+        <a href="#payment" class="btn primary">
+          Proceed Payment
+        </a>
+      </div>
+
+
+      <div class="card">
+        <h3>Professional</h3>
+
+        <div class="price">₦90,000</div>
+
+        <ul>
+          <li>✓ Premium advertisement</li>
+          <li>✓ Global promotion</li>
+          <li>✓ Higher visibility</li>
+        </ul>
+
+        <a href="#payment" class="btn primary">
+          Proceed Payment
+        </a>
+      </div>
+
+
+      <div class="card">
+        <h3>Business</h3>
+
+        <div class="price">₦180,000</div>
+
+        <ul>
+          <li>✓ Business campaign</li>
+          <li>✓ Global exposure</li>
+          <li>✓ Priority placement</li>
+        </ul>
+
+        <a href="#payment" class="btn primary">
+          Proceed Payment
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="payment">
+
+    <div class="payment">
+
+      <h2>Proceed With Your Advertisement</h2>
+
+      <p>
+        Select your advertising package and continue to payment.
+      </p>
+
+      <br>
+
+      <button
+        class="btn primary"
+        onclick="alert('Payment system will be connected in the next step.')">
+        Proceed Payment
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact">
+
+    <div class="title">
+      <h2>Contact Us</h2>
+
+      <p>
+        Interested in advertising with us?
+        Contact our advertising team.
+      </p>
+
+      <br>
+
+      <a
+        href="https://wa.me/2348038491609
+        class="btn primary">
+        WhatsApp Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    © 2026 Biz Global Ads. All rights reserved.
+  </footer>
+
+
+</body>
+</html>
